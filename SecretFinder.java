@@ -19,7 +19,7 @@ public class SecretFinder {
     }
 
     public static void main(String[] args) throws Exception {
-        String[] files = {"testcase1.json", "testcase2.json"}; // replace with actual filenames
+        String[] files = {"testcase1.json", "testcase2.json"}; 
         for (String file : files) {
             System.out.println("Processing: " + file);
             JSONObject json = (JSONObject) new JSONParser().parse(new FileReader(file));
@@ -50,7 +50,7 @@ public class SecretFinder {
     }
 
     public static BigInteger lagrangeInterpolationAtZero(List<Share> shares) {
-        MathContext mc = new MathContext(100); // high precision
+        MathContext mc = new MathContext(100); 
         BigDecimal secret = BigDecimal.ZERO;
 
         for (int i = 0; i < shares.size(); i++) {
@@ -68,6 +68,6 @@ public class SecretFinder {
             secret = secret.add(term, mc);
         }
 
-        return secret.toBigInteger(); // round/truncate to BigInteger as per constraints
+        return secret.toBigInteger(); 
     }
 }
