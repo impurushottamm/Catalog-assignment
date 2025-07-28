@@ -63,3 +63,6 @@ Recovered Secret (constant term): 3
 
 Processing: testcase2.json
 Recovered Secret (constant term): 79836264049851
+
+<img width="1440" height="900" alt="Screenshot 2025-07-28 at 12 00 34 PM" src="https://github.com/user-attachments/assets/7159661e-f5f3-4769-8546-58868f4500be" />
+
